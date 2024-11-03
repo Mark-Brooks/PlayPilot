@@ -5,6 +5,7 @@ from flask import Flask, request
 
 # Spotify application credentials (development only, replace for production)
 CLIENT_ID = "e675ec708c1143d1a377ac503821f937"
+CLIENT_SECRET = "0fb77ee9479b45a08eb28565d6a3f086"
 REDIRECT_URI = "http://localhost:8080/callback"  # local server for dev only
 AUTH_URL = "https://accounts.spotify.com/authorize"
 TOKEN_URL = "https://accounts.spotify.com/api/token"
@@ -30,7 +31,7 @@ def callback():
         "code": code,
         "redirect_uri": REDIRECT_URI,
         "client_id": CLIENT_ID,
-        "client_secret": "your_spotify_client_secret",
+        "client_secret": CLIENT_SECRET,
     })
     auth_token = response.json().get("access_token")
     return "Authorization complete. You may close this window."
