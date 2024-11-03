@@ -1,6 +1,9 @@
+import os
 import pygame
 import sys
 
+# Set the display environment variable
+os.environ['SDL_VIDEODRIVER'] = 'x11'  # or 'fbcon', try both if needed
 pygame.init()
 screen = pygame.display.set_mode((800, 480))
 pygame.display.set_caption("Pygame Test")
