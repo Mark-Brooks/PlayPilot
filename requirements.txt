@@ -1,0 +1,16 @@
+# OAuth and HTTP requests for Spotify API interaction
+requests
+flask  # For handling the redirect during Spotify OAuth flow
+
+# Display handling library
+pygame  # For touchscreen display interaction
+
+# Cryptography for secure storage (optional if you decide to add token encryption)
+cryptography
+
+# GPIO for interacting with the rotary encoder on the Raspberry Pi
+RPi.GPIO
+gpiozero  # Optional, can simplify working with GPIO on Raspberry Pi
+
+# Spotify-specific library (optional if you want to use instead of manual API calls)
+spotipy  # Simplifies interaction with Spotify API (optional)
