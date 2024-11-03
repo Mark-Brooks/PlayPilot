@@ -4,7 +4,7 @@ import webbrowser
 from flask import Flask, request
 
 # Spotify application credentials (development only, replace for production)
-CLIENT_ID = "your_spotify_client_id"
+CLIENT_ID = "e675ec708c1143d1a377ac503821f937"
 REDIRECT_URI = "http://localhost:8080/callback"  # local server for dev only
 AUTH_URL = "https://accounts.spotify.com/authorize"
 TOKEN_URL = "https://accounts.spotify.com/api/token"
